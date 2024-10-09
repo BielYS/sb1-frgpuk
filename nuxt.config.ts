@@ -22,6 +22,12 @@ export default defineNuxtConfig({
         { name: 'twitter:image', content: 'https://yoursaasstartup.com/twitter-image.jpg' },
       ],
       link: [
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com'},
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com',},
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap'
+        },
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         { rel: 'canonical', href: 'https://yoursaasstartup.com' },
       ],
@@ -31,3 +37,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
   ],
 })
+
+function defineNuxtConfig(arg0: { compatibilityDate: string; devtools: { enabled: boolean; }; app: { head: { charset: string; viewport: string; title: string; meta: ({ name: string; content: string; } | { property: string; content: string; })[]; link: ({ rel: string; type: string; href: string; } | { rel: string; href: string; })[]; }; }; modules: string[]; }) {
+  throw new Error("Function not implemented.");
+}
